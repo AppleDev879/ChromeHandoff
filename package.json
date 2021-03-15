@@ -1,0 +1,13 @@
+{
+  "name": "windowshandoff",
+  "version": "1.0.0",
+  "description": "Applet that will open webpages in Chrome served by iPhone app",
+  "main": "runner.js",
+  "author": "Andrew Barrett",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,32 @@
+2021-03-03 01:19:58 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Andrew\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file C:\Users\Andrew\Documents\WindowsHandoff\express-server.js --scriptoptions= --log "Windows Handoff wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-03-03 01:19:58 - Started 34892
+2021-03-03 01:20:33 - Stopping windowshandoff.exe
+2021-03-03 01:20:33 - ProcessKill 34892
+2021-03-03 01:20:33 - Found child process: 18072 Name: conhost.exe
+2021-03-03 01:20:33 - Found child process: 35068 Name: node.exe
+2021-03-03 01:20:33 - Stopping process 18072
+2021-03-03 01:20:33 - Send SIGINT 18072
+2021-03-03 01:20:33 - SIGINT to 18072 failed - Killing as fallback
+2021-03-03 01:20:33 - Stopping process 35068
+2021-03-03 01:20:33 - Send SIGINT 35068
+2021-03-03 01:20:33 - SIGINT to 35068 failed - Killing as fallback
+2021-03-03 01:20:33 - Stopping process 34892
+2021-03-03 01:20:33 - Send SIGINT 34892
+2021-03-03 01:20:33 - SIGINT to 34892 failed - Killing as fallback
+2021-03-03 01:20:33 - Finished windowshandoff.exe
+2021-03-13 00:22:58 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Andrew\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file C:\Users\Andrew\Documents\WindowsHandoff\express-server.js --scriptoptions= --log "Windows Handoff wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-03-13 00:22:58 - Started 6240
+2021-03-15 11:56:31 - Stopping windowshandoff.exe
+2021-03-15 11:56:31 - ProcessKill 6240
+2021-03-15 11:56:31 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
