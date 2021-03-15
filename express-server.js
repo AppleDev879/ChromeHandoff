@@ -4,10 +4,6 @@
  *
 */
 
-// Log to Event Viewer when being used as a Service
-var EventLogger = require('node-windows').EventLogger;
-var log = new EventLogger('Win-Handover');
-
 // Use Express to host the web server
 const express = require('express');
 const app = express()
@@ -26,7 +22,7 @@ app.use(express.json())
 
 // Capture POST request
 app.post('/', (req, res) => {
-  log.info('Received url: ' + req.body.url);
+  console.log('Received url: ' + req.body.url);
   
   // Check that the request includes the password
   if (req.body.password == password) {
@@ -36,11 +32,11 @@ app.post('/', (req, res) => {
     exec(script, (error, stdout, stderr) => {
       // Log errors
       if (error) {
-          log.error(`error: ${error.message}`);
+          console.log.error(`error: ${error.message}`);
           return;
       }
       if (stderr) {
-          log.error(`stderr: ${stderr}`);
+          console.log.error(`stderr: ${stderr}`);
           return;
       }
     });
@@ -50,7 +46,7 @@ app.post('/', (req, res) => {
 
 // Listen for requests on a given port
 app.listen(port, () => {
-  log.info(`WindowsHandoff listening at http://localhost:${port}`)
+  console.log(`WindowsHandoff listening at http://localhost:${port}`)
 })
 
 // we want to run 'start chrome www.macrumors.com' , with the url provided in req
