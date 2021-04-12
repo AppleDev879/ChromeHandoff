@@ -1,5 +1,5 @@
 # ChromeHandoff
-Works with a Shortcuts action on iOS to open mobile Safari webpages in the Chrome browser of a locally networked computer.
+Works with a Shortcuts action on iOS to open mobile Safari webpages in the Chrome browser of a locally networked computer. Video demonstration at https://bit.ly/3g775NY.
 
 Installation: make sure you have Node installed. You will also need Express. 
 
